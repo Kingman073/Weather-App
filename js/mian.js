@@ -42,8 +42,8 @@ async function getWeather(city) {
 
 function displayWeather(data) {
     cityName.textContent = data.name;
-    temperature.innerHTML = `Temperature: <span>${data.main.temp}°C</span>`;
-    description.innerHTML = `Description: <span>${data.weather[0].description}</span>`;
-    humidity.innerHTML = `Humidity: <span>${data.main.humidity}%</span>`;
-    windSpeed.innerHTML = `Wind Speed: <span>${data.wind.speed} m/s</span>`;
+    temperature.innerHTML = `Температура: <span>${data.main.temp}°C</span>`;
+    description.innerHTML = `Описание: <span>${data.weather[0].description}</span>`;
+    humidity.innerHTML = `Влажность: <span>${data.main.humidity}%</span>`;
+    windSpeed.innerHTML = `Скорость Ветра: <span>${data.wind.speed} m/s</span>`;
 }
